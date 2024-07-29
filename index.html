@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+
+    <!-- ICONOS FOOTER -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Scripts sección habilidades -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Portfolio</title>
+</head>
+
+<body class="background">
+    <header class="header">
+        <a href="#" class="header__logo">BeltranDev</a>
+
+        <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
+
+        <nav class="nav" id="nav-menu">
+            <div class="nav__content bd-grid">
+
+                <ion-icon name="close-outline" class="nav__close" id="nav-close"></ion-icon>
+
+                <div class="nav__perfil">
+                    <div class="nav__img">
+                        <img src="./img/modificado2.png" alt="">
+                    </div>
+                    <div class="nav__info">
+                        <a href="#" class="nav__name">BeltranDev</a>
+                        <span class="nav__profesion">Web Developer</span>
+                    </div>
+                </div>
+
+
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Inicio</a></li>
+                        <li class="nav__item"><a href="#sobremi" class="nav__link">Sobre mí</a></li>
+                        <li class="nav__item"><a href="#habilidades" class="nav__link">Habilidades</a></li>
+                        <li class="nav__item"><a href="#trabajos" class="nav__link">Trabajos</a></li>
+                        <li class="nav__item"><a href="#contacto" class="nav__link">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__social">
+                    <a href="https://www.linkedin.com/in/beltrandev" target="_blank" class="nav__social-icon"><ion-icon
+                            name="logo-linkedin"></ion-icon></a>
+                    <a href="https://github.com/beltrandev90" target="_blank" class="nav__social-icon"><ion-icon
+                            name="logo-github"></ion-icon></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="home" id="home">
+            <div class="content">
+                <div class="col">
+                    <h2 class="title">Desarrolladora Web</h2>
+                    <p class="intro">
+                        ¡Hola! Soy Inma, desarrolladora web apasionada por crear experiencias digitales impresionantes.
+                    </p>
+                    <div class="btn-container">
+                        <button class="btn">Descargar CV</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="contenedor-img">
+                        <img src="img/modificado2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN S O B R E  M I -->
+        <div class="section1" id="sobremi">
+            <section>
+                <div class="card1">
+                    <img src="https://i.ibb.co/MfkDg6r/01.png" style="width:100px;" alt="">
+                    <h1>Sobre mí</h1>
+                    <p>¡Hola! Soy Inma, diseñadora web y desarrolladora. Me especializo en crear diseños limpios,
+                        llamativos y accesibles que se adaptan a las necesidades de cualquier cliente. Actualmente soy
+                        independiente y me enfoco en proporcionar contenido de alta gama para pequeños negocios,
+                        emprendedores, profesionales y cualquier persona que busque mejorar su presencia en línea.
+                        Estoy expandiendo mis habilidades de desarrollo para incluir Kotlin y C#, con el objetivo de
+                        ofrecer soluciones aún más robustas y versátiles.
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <!-- SECCIÓN H A B I L I D A D E S -->
+        <div class="skills-section mt-100" id="habilidades">
+            <h1>Habilidades</h1>
+            <div class="container2">
+                <div class="row justify-content-center">
+                    <!-- HTML & CSS -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="progress html-css">
+                                <span class="progress-left">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <span class="progress-right">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <div class="progress-value">85%</div>
+                            </div>
+                            <div class="skill-label">HTML & CSS</div>
+                        </div>
+                    </div>
+
+                    <!-- JavaScript -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="progress javascript">
+                                <span class="progress-left">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <span class="progress-right">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <div class="progress-value">80%</div>
+                            </div>
+                            <div class="skill-label">JavaScript</div>
+                        </div>
+                    </div>
+
+                    <!-- Angular e Ionic -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="progress angular-ionic">
+                                <span class="progress-left">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <span class="progress-right">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <div class="progress-value">80%</div>
+                            </div>
+                            <div class="skill-label">Angular e Ionic</div>
+                        </div>
+                    </div>
+
+                    <!-- PHP -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="progress php">
+                                <span class="progress-left">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <span class="progress-right">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <div class="progress-value">75%</div>
+                            </div>
+                            <div class="skill-label">PHP</div>
+                        </div>
+                    </div>
+
+                    <!-- CodeIgniter -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="progress codeigniter">
+                                <span class="progress-left">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <span class="progress-right">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <div class="progress-value">75%</div>
+                            </div>
+                            <div class="skill-label">CodeIgniter</div>
+                        </div>
+                    </div>
+
+                    <!-- MySQL -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="progress mysql">
+                                <span class="progress-left">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <span class="progress-right">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <div class="progress-value">70%</div>
+                            </div>
+                            <div class="skill-label">MySQL</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCIÓN T R A B A J O S -->
+        <section class="trabajos" id="trabajos">
+            <h1 style="text-align: center;">Mis Trabajos</h1>
+            <!-- <nav>
+            <a href="javascript:void(0)" class="borde" id="item" onclick="verCategoria('item')">Todos</a>
+            <a href="javascript:void(0)" class="" id="disenio" onclick="verCategoria('disenio')">Diseño</a>
+            <a href="javascript:void(0)" class="" id="programacion"
+                onclick="verCategoria('programacion')">Programación</a>
+            <a href="javascript:void(0)" class="" id="animaciones" onclick="verCategoria('animaciones')">Animaciones</a>
+        </nav> -->
+
+            <div class="galeria">
+                <div class="item disenio">
+                    <img src="img/inicio.PNG" alt="">
+                    <div class="info">
+                        <h3>App Anótame</h3>
+                        <span>Angular</span><span>Ionic</span><span>Codeigniter</span>
+                        <a href="https://github.com/beltrandev90/anotame">Ver Trabajo</a>
+                    </div>
+                </div>
+                <div class="item programacion">
+                    <img src="img/kuba2.PNG" alt="">
+                    <div class="info">
+                        <h3>Web Kuba Homes</h3>
+                        <span>html</span><span>css</span><span>javascript</span>
+                        <a href="https://github.com/beltrandev90/kubahomes">Ver Trabajo</a>
+                    </div>
+                </div>
+                <div class="item animaciones">
+                    <img src="img/colorin2.png" alt="">
+                    <div class="info">
+                        <h3>App Colorín Colorado</h3>
+                        <span>Android Studio</span><span>Java</span>
+                        <a href="https://github.com/beltrandev90/ColorinColorado">Ver Trabajo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN C O N T A C T O -->
+        <section class="contacto" id="contacto">
+            <div class="contenedor-contacto">
+                <h1 style="text-align: center;">Contacto</h1>
+                <div class="fila">
+                    <div class="col">
+                        <div class="info">
+                            <h3>Email:</h3>
+                            <p>beltrandev90@gmail.com</p>
+                        </div>
+                        <div class="info">
+                            <h3>Teléfono:</h3>
+                            <p>+34 695 813 778</p>
+                        </div>
+                        <div class="info">
+                            <h3>País</h3>
+                            <p>España</p>
+                        </div>
+                        <div class="info">
+                            <h3>Ciudad:</h3>
+                            <p>Valencia</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <form action="contacto.php" method="POST">
+                            <input type="text" name="nombre" placeholder="Nombre..." required>
+                            <input type="email" name="correo" placeholder="Correo..." required>
+                            <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                            <input type="submit" value="Enviar" class="btn">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer">
+                <div class="nav__social">
+                    <a href="https://www.linkedin.com/in/beltrandev" target="_blank" class="nav__social-icon"><ion-icon
+                            name="logo-linkedin"></ion-icon></a>
+                    <a href="https://github.com/beltrandev90" target="_blank" class="nav__social-icon"><ion-icon
+                            name="logo-github"></ion-icon></a>
+                </div>
+
+                <div class="row">
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#sobremi">Sobre mí</a></li>
+                        <li><a href="#habilidades">Habilidades</a></li>
+                        <li><a href="#trabajos">Trabajos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="row">
+                    &copy2024 BeltranDev - Web Developer | Todos los derechos reservados
+                </div>
+            </div>
+        </footer>
+
+
+    </main>
+    <!-- Incluyendo el JS de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- ===== IONICONS ===== -->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
