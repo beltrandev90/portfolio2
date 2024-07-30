@@ -602,6 +602,9 @@ img {
 }
 
 /*Aparecer menu*/
+.show {
+    left: 0;
+}
 
 /*Active menu*/
 .active {
@@ -873,7 +876,9 @@ img {
 
 /* SECCIÓN  I N I C I O */
 .home,
+.servicios,
 .habilidades,
+.projetos,
 .contacto {
     position: relative;
     z-index: 1;
@@ -991,6 +996,36 @@ section.home .btn:hover {
     --primary: #6EF2E7;
 }
 
+.bar {
+    display: block;
+    height: 5px;
+    width: 100px;
+    background: var(--primary);
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 20px auto 20px 0;
+}
+
+.bar:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 5px;
+    background: #fff;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: MOVE-BG;
+    animation-name: MOVE-BG;
+}
+
 @keyframes MOVE-BG {
     0% {
         -webkit-transform: translateX(0);
@@ -1023,7 +1058,7 @@ section.home .btn:hover {
     border-radius: 10px;
     margin: 10px;
     margin-top: -80px;
-    background-image: url("./img/fondo-card.webp");
+    background-image: url("./img/fondo-card.png");
     background-repeat: no-repeat;
     background-position: top left;
     /* Mantiene la imagen en la esquina superior izquierda */
@@ -1036,6 +1071,19 @@ section.home .btn:hover {
 
 .section1 .card1:hover {
     box-shadow: 0px 4px 14px -4px rgba(1, 1, 1, 0.5);
+}
+
+.section1 .card1 .tag {
+    position: absolute;
+    background-color: var(--lite);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 2%;
+    right: 2%;
 }
 
 
@@ -1086,7 +1134,7 @@ section.home .btn:hover {
         border-radius: 10px;
         margin: -80px auto 20px;
         /* Agrega margen superior y centra horizontalmente */
-        background-image: url("./img/fondo-card.webp");
+        background-image: url("./img/fondo-card.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -1342,7 +1390,8 @@ section.home .btn:hover {
     }
 }
 
-/* SECCIÓN T R A B A J O S */
+
+/* SECCION T R A B A J O S */
 .trabajos {
     max-width: 1100px;
     margin: auto;
@@ -1374,7 +1423,7 @@ section.home .btn:hover {
     border: 3px solid #AAC3BD;
 }
 
-/* Esta clase se agrega dinámicamente cuando haya seleccionada una opción */
+/* Esta clase se agregrá dinámicamente cuando haya seleccionada una opción */
 /* .borde {
     border: 3px solid #AAC3BD !important;
 } */
@@ -1402,20 +1451,10 @@ section.home .btn:hover {
     align-items: center;
 }
 
-.trabajos .galeria .item picture {
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    width: 100%;
-    height: 200px; /* Ajusta la altura como necesites */
-    overflow: hidden; /* Asegura que la imagen no se desborde del contenedor */
-}
-
 .trabajos .galeria .item img {
     width: 100%;
-    height: auto; /* Mantiene la proporción de la imagen */
-    max-height: 100%; /* Limita la altura máxima para ajustarse al contenedor */
-    object-fit: cover; /* Ajusta la imagen para que cubra el contenedor */
+    height: 200px;
+    object-fit: cover;
     border-radius: 15px;
     /* Bordes redondeados para las imágenes */
 }
@@ -1436,12 +1475,16 @@ section.home .btn:hover {
     opacity: 0;
     transition: .3s;
     border-radius: 20px;
+    /* Bordes redondeados */
 }
 
 .trabajos .galeria .item .info h3 {
     font-size: 1.5rem;
     color: #AAC3BD;
+    /* Color de texto kawaii */
     margin-bottom: 20px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    /* Fuente estilo kawaii */
 }
 
 .trabajos .galeria .item .info span {
@@ -1452,6 +1495,7 @@ section.home .btn:hover {
     padding: 0 5px;
     border-radius: 5px;
     background-color: #fafafa;
+    /* Fondo suave para los spans */
 }
 
 .trabajos .galeria .item .info a {
@@ -1459,14 +1503,19 @@ section.home .btn:hover {
     margin: 20px;
     text-decoration: none;
     font-weight: bold;
+    background-color: linear-gradient(#89bdb1, #a7feea);
+    /* Fondo suave para el enlace */
+    padding: 10px;
+    border-radius: 10px;
+    /* Bordes redondeados para el enlace */
+    border: 2px solid #AAC3BD;
+    /* Borde interno suave y kawaii */
     background: linear-gradient(to left, #ff5b00, #ff9900);
     /* Gradiente para el texto */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid #AAC3BD;
 }
+
 
 .trabajos .galeria .item:hover .info {
     opacity: 1;
@@ -1475,7 +1524,7 @@ section.home .btn:hover {
 
 @media screen and (max-width: 768px) {
     .trabajos {
-        max-width: 100%;
+        max-width: 1100px;
         margin: auto;
         padding: 0 20px;
         margin-top: 520px;

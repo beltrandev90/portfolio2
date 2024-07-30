@@ -12,7 +12,18 @@
 
     <!-- Scripts sección habilidades -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <title>Portfolio</title>
+
+    <title>Portfolio - BeltranDev</title>
+
+    <!-- META DESCRIPTION -->
+    <meta name="description" content="Portfolio de Inma Beltrán, desarrolladora web especializada en HTML, CSS, JavaScript, Angular, Ionic, PHP, CodeIgniter y MySQL.">
+
+    <!-- META KEYWORDS -->
+    <meta name="keywords" content="Inma Beltrán, BeltranDev, desarrolladora web, HTML, CSS, JavaScript, Angular, Ionic, PHP, CodeIgniter, MySQL, portfolio, diseñadora web, Valencia">
+
+    <!-- META AUTHOR -->
+    <meta name="author" content="Inma Beltrán">
+
 </head>
 
 <body class="background">
@@ -28,14 +39,16 @@
 
                 <div class="nav__perfil">
                     <div class="nav__img">
-                        <img src="./img/modificado2.png" alt="">
+                        <picture>
+                            <source srcset="./img/modificado2.webp" type="image/webp">
+                            <img src="./img/modificado2.png" alt="Inma Beltrán, desarrolladora web, en su perfil profesional" loading="lazy">
+                        </picture>
                     </div>
                     <div class="nav__info">
                         <a href="#" class="nav__name">BeltranDev</a>
                         <span class="nav__profesion">Web Developer</span>
                     </div>
                 </div>
-
 
                 <div class="nav__menu">
                     <ul class="nav__list">
@@ -48,10 +61,8 @@
                 </div>
 
                 <div class="nav__social">
-                    <a href="https://www.linkedin.com/in/beltrandev" target="_blank" class="nav__social-icon"><ion-icon
-                            name="logo-linkedin"></ion-icon></a>
-                    <a href="https://github.com/beltrandev90" target="_blank" class="nav__social-icon"><ion-icon
-                            name="logo-github"></ion-icon></a>
+                    <a href="https://www.linkedin.com/in/beltrandev" target="_blank" class="nav__social-icon"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="https://github.com/beltrandev90" target="_blank" class="nav__social-icon"><ion-icon name="logo-github"></ion-icon></a>
                 </div>
             </div>
         </nav>
@@ -61,7 +72,7 @@
         <section class="home" id="home">
             <div class="content">
                 <div class="col">
-                    <h2 class="title">Desarrolladora Web</h2>
+                    <h1 class="title">Desarrolladora Web</h1>
                     <p class="intro">
                         ¡Hola! Soy Inma, desarrolladora web apasionada por crear experiencias digitales impresionantes.
                     </p>
@@ -71,32 +82,30 @@
                 </div>
                 <div class="col">
                     <div class="contenedor-img">
-                        <img src="img/modificado2.png" alt="">
+                        <picture>
+                            <source srcset="img/modificado2.webp" type="image/webp">
+                            <img src="img/modificado2.png" alt="Inma Beltrán, desarrolladora web, en su perfil profesional" loading="lazy">
+                        </picture>
                     </div>
                 </div>
             </div>
-        </section>        
+        </section>
 
-        <!-- SECCIÓN S O B R E  M I -->
+        <!-- SECCIÓN SOBRE MÍ -->
         <div class="section1" id="sobremi">
             <section>
                 <div class="card1">
-                    <img src="https://i.ibb.co/MfkDg6r/01.png" style="width:100px;" alt="">
-                    <h1>Sobre mí</h1>
-                    <p>¡Hola! Soy Inma, diseñadora web y desarrolladora. Me especializo en crear diseños limpios,
-                        llamativos y accesibles que se adaptan a las necesidades de cualquier cliente. Actualmente soy
-                        independiente y me enfoco en proporcionar contenido de alta gama para pequeños negocios,
-                        emprendedores, profesionales y cualquier persona que busque mejorar su presencia en línea.
-                        Estoy expandiendo mis habilidades de desarrollo para incluir Kotlin y C#, con el objetivo de
-                        ofrecer soluciones aún más robustas y versátiles.
+                    <img src="https://i.ibb.co/MfkDg6r/01.png" style="width:100px;" alt="Icono representativo de información sobre mí" loading="lazy">
+                    <h2>Sobre mí</h2>
+                    <p>¡Hola! Soy Inma, diseñadora web y desarrolladora. Me especializo en crear diseños limpios, llamativos y accesibles que se adaptan a las necesidades de cualquier cliente. Actualmente soy independiente y me enfoco en proporcionar contenido de alta gama para pequeños negocios, emprendedores, profesionales y cualquier persona que busque mejorar su presencia en línea. Estoy expandiendo mis habilidades de desarrollo para incluir Kotlin y C#, con el objetivo de ofrecer soluciones aún más robustas y versátiles.
                     </p>
                 </div>
             </section>
         </div>
 
-        <!-- SECCIÓN H A B I L I D A D E S -->
+        <!-- SECCIÓN HABILIDADES -->
         <div class="skills-section mt-100" id="habilidades">
-            <h1>Habilidades</h1>
+            <h2>Habilidades</h2>
             <div class="container2">
                 <div class="row justify-content-center">
                     <!-- HTML & CSS -->
@@ -198,29 +207,38 @@
             </div>
         </div>
 
-        <!-- SECCIÓN T R A B A J O S -->
+        <!-- SECCIÓN TRABAJOS -->
         <section class="trabajos" id="trabajos">
-            <h1 style="text-align: center;">Mis Trabajos</h1>
+            <h2 style="text-align: center;">Mis Trabajos</h2>
             
             <div class="galeria">
                 <div class="item disenio">
-                    <img src="img/inicio.PNG" alt="">
+                    <picture>
+                        <source srcset="img/inicio.webp" type="image/webp">
+                        <img src="img/inicio.png" style="height:190px;" alt="Captura de la aplicación Anótame, desarrollada con Angular, Ionic y CodeIgniter" loading="lazy">
+                    </picture>
                     <div class="info">
                         <h3>App Anótame</h3>
-                        <span>Angular</span><span>Ionic</span><span>Codeigniter</span>
+                        <span>Angular</span><span>Ionic</span><span>CodeIgniter</span>
                         <a href="https://github.com/beltrandev90/anotame">Ver Trabajo</a>
                     </div>
                 </div>
                 <div class="item programacion">
-                    <img src="img/kuba2.PNG" alt="">
+                    <picture>
+                        <source srcset="img/kuba2.webp" type="image/webp">
+                        <img src="img/kuba2.png" style="height:180px;" alt="Captura del sitio web Kuba Homes, desarrollado con HTML, CSS y JavaScript" loading="lazy">
+                    </picture>
                     <div class="info">
                         <h3>Web Kuba Homes</h3>
-                        <span>html</span><span>css</span><span>javascript</span>
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
                         <a href="https://github.com/beltrandev90/kubahomes">Ver Trabajo</a>
                     </div>
                 </div>
                 <div class="item animaciones">
-                    <img src="img/colorin2.png" alt="">
+                    <picture>
+                        <source srcset="img/colorin2.webp" type="image/webp">
+                        <img src="img/colorin2.png" style="height: 220px;" alt="Captura de la aplicación Colorín Colorado, desarrollada con Android Studio y Java" loading="lazy">
+                    </picture>
                     <div class="info">
                         <h3>App Colorín Colorado</h3>
                         <span>Android Studio</span><span>Java</span>
@@ -230,10 +248,10 @@
             </div>
         </section>
 
-        <!-- SECCIÓN C O N T A C T O -->
+        <!-- SECCIÓN CONTACTO -->
         <section class="contacto" id="contacto">
             <div class="contenedor-contacto">
-                <h1 style="text-align: center;">Contacto</h1>
+                <h2 style="text-align: center;">Contacto</h2>
                 <div class="fila">
                     <div class="col">
                         <div class="info">
@@ -245,7 +263,7 @@
                             <p>+34 695 813 778</p>
                         </div>
                         <div class="info">
-                            <h3>País</h3>
+                            <h3>País:</h3>
                             <p>España</p>
                         </div>
                         <div class="info">
@@ -268,15 +286,13 @@
         <footer>
             <div class="footer">
                 <div class="nav__social">
-                    <a href="https://www.linkedin.com/in/beltrandev" target="_blank" class="nav__social-icon"><ion-icon
-                            name="logo-linkedin"></ion-icon></a>
-                    <a href="https://github.com/beltrandev90" target="_blank" class="nav__social-icon"><ion-icon
-                            name="logo-github"></ion-icon></a>
+                    <a href="https://www.linkedin.com/in/beltrandev" target="_blank" class="nav__social-icon"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="https://github.com/beltrandev90" target="_blank" class="nav__social-icon"><ion-icon name="logo-github"></ion-icon></a>
                 </div>
 
                 <div class="row">
                     <ul>
-                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#home">Inicio</a></li>
                         <li><a href="#sobremi">Sobre mí</a></li>
                         <li><a href="#habilidades">Habilidades</a></li>
                         <li><a href="#trabajos">Trabajos</a></li>
@@ -285,13 +301,12 @@
                 </div>
 
                 <div class="row">
-                    &copy2024 BeltranDev - Web Developer | Todos los derechos reservados
+                    &copy; 2024 BeltranDev - Web Developer | Todos los derechos reservados
                 </div>
             </div>
         </footer>
-
-
     </main>
+
     <!-- Incluyendo el JS de Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
